@@ -1,0 +1,25 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.annotations.LoadMemoryAnnotation",
+    "target":"myc01_core.regfile.regs",
+    "fileName":"C:/Users/user/Desktop/myc01-core/src/main/resource/regs.txt",
+    "hexOrBinary":"h",
+    "originalMemoryNameOpt":"regs"
+  },
+  {
+    "class":"firrtl.options.TargetDirAnnotation",
+    "directory":"test_run_dir\\myc01_core_should_test_Btype"
+  },
+  {
+    "class":"firrtl.options.OutputAnnotationFileAnnotation",
+    "file":"myc01_core"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\myc01_core_should_test_Btype"
+  }
+]

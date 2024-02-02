@@ -1,0 +1,68 @@
+$date
+2022-01-09T06:10+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module memwb_reg $end
+ $var wire 1 ! io_mem_wreg $end
+ $var wire 5 " wa_reg $end
+ $var wire 1 # io_wb_wreg $end
+ $var wire 1 $ wreg_reg $end
+ $var wire 1 % clock $end
+ $var wire 5 & io_mem_wa $end
+ $var wire 32 ' dreg_reg $end
+ $var wire 32 ( io_mem_dreg $end
+ $var wire 5 ) io_wb_wa $end
+ $var wire 1 * reset $end
+ $var wire 32 + io_wb_dreg $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0%
+b00000000000000000000000000000000 '
+0#
+0*
+b00000000000000000000000000000000 +
+b00000000000000000000000000000000 (
+b00000 "
+b00000 )
+b00000 &
+0$
+0!
+$end
+#0
+1*
+#1
+1%
+#6
+1!
+0%
+b00001 &
+0*
+#11
+1%
+b00001 "
+1#
+1$
+b00001 )
+#16
+0!
+0%
+b00000 &
+#21
+1%
+b00000 "
+0#
+0$
+b00000 )
+#26
+0%
+#31
+1%
+#36
+0%

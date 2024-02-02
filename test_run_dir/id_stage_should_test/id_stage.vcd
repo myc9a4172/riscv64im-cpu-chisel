@@ -1,0 +1,136 @@
+$date
+2022-01-08T13:01+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module id_stage $end
+ $var wire 1 ! id_alutype_temp_1 $end
+ $var wire 8 " _T $end
+ $var wire 8 # io_id_aluop_o $end
+ $var wire 5 $ io_id_wa_o $end
+ $var wire 1 % inst_sll $end
+ $var wire 1 & inst_and $end
+ $var wire 1 ' id_alutype_temp_0 $end
+ $var wire 1 ( inst_sub $end
+ $var wire 1 ) io_rreg1 $end
+ $var wire 32 * io_rd2 $end
+ $var wire 1 + io_id_wreg_o $end
+ $var wire 32 , io_id_src2_o $end
+ $var wire 1 - inst_xor $end
+ $var wire 5 . io_ra2 $end
+ $var wire 1 / inst_slt $end
+ $var wire 1 0 inst_or $end
+ $var wire 7 1 func7 $end
+ $var wire 32 2 id_inst $end
+ $var wire 1 3 inst_sra $end
+ $var wire 1 4 clock $end
+ $var wire 7 5 opcode $end
+ $var wire 3 6 io_id_alutype_o $end
+ $var wire 1 7 id_alutype_temp_2 $end
+ $var wire 1 8 inst_sltu $end
+ $var wire 32 9 io_rd1 $end
+ $var wire 32 : io_id_src1_o $end
+ $var wire 5 ; io_ra1 $end
+ $var wire 3 < func3 $end
+ $var wire 1 = io_rreg2 $end
+ $var wire 1 > reset $end
+ $var wire 1 ? inst_add $end
+ $var wire 32 @ io_id_pc_i $end
+ $var wire 32 A io_id_inst_i $end
+ $var wire 1 B inst_srl $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0%
+0&
+0'
+0=
+0>
+0!
+b00000 .
+07
+08
+b00000000000000000000000000000000 9
+b00000000000000000000000000000000 :
+b00000000000000000000000000000000 2
+03
+04
+b00000 $
+0-
+b00000000 "
+b00000 ;
+0/
+b00000000 #
+00
+b000 <
+0(
+b00000000000000000000000000000000 *
+0)
+b0000000 1
+0?
+b00000000000000000000000000000000 @
+b000 6
+b00000000000000000000000000000000 A
+0+
+b00000000000000000000000000000000 ,
+0B
+b0000000 5
+$end
+#0
+1>
+#1
+14
+#6
+04
+b00010 .
+b0110011 5
+1'
+b001 6
+1=
+0>
+1)
+1?
+b00000001 #
+b00000000001000001000000110110011 2
+b00000000000000000000000000000010 *
+b00000000000000000000000000000001 9
+b00011 $
+1+
+b00000000000000000000000000000001 :
+b10110011100000010010000000000000 A
+b00000000000000000000000000000010 ,
+b00001 ;
+#11
+14
+#16
+04
+#21
+14
+#26
+04
+b00000 .
+b0000000 5
+0'
+b000 6
+0=
+0)
+0?
+b00000000 #
+b00000000000000000000000000000000 2
+b00000000000000000000000000000000 *
+b00000000000000000000000000000000 9
+b00000 $
+0+
+b00000000000000000000000000000000 :
+b00000000000000000000000000000000 A
+b00000000000000000000000000000000 ,
+b00000 ;
+#31
+14
+#36
+04

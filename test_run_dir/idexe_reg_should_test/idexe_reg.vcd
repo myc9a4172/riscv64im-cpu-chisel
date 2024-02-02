@@ -1,0 +1,110 @@
+$date
+2022-01-08T13:00+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module idexe_reg $end
+ $var wire 3 ! alutype_reg $end
+ $var wire 3 " io_exe_alutype $end
+ $var wire 5 # wa_reg $end
+ $var wire 1 $ wreg_reg $end
+ $var wire 5 % io_id_wa $end
+ $var wire 8 & aluop_reg $end
+ $var wire 8 ' io_id_aluop $end
+ $var wire 5 ( io_exe_wa $end
+ $var wire 32 ) io_id_src2 $end
+ $var wire 32 * io_exe_src2 $end
+ $var wire 32 + src1_reg $end
+ $var wire 1 , clock $end
+ $var wire 32 - io_exe_src1 $end
+ $var wire 32 . io_id_src1 $end
+ $var wire 1 / io_id_wreg $end
+ $var wire 8 0 io_exe_aluop $end
+ $var wire 3 1 io_id_alutype $end
+ $var wire 1 2 io_exe_wreg $end
+ $var wire 32 3 src2_reg $end
+ $var wire 1 4 reset $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+04
+b000 "
+b000 1
+b00000 #
+b00000000000000000000000000000000 .
+b00000000 0
+b00000 %
+0/
+b00000000000000000000000000000000 )
+b00000000000000000000000000000000 *
+b00000000000000000000000000000000 +
+b00000 (
+b00000000000000000000000000000000 3
+b00000000 &
+b00000000000000000000000000000000 -
+02
+0,
+0$
+b00000000 '
+b000 !
+$end
+#0
+14
+#1
+1,
+#6
+b00001 %
+04
+b001 1
+b00000000000000000000000000000001 .
+b00000001 '
+1/
+0,
+b00000000000000000000000000000001 )
+#11
+b00000000000000000000000000000001 3
+b00000001 0
+b00000000000000000000000000000001 -
+b001 !
+b001 "
+b00000001 &
+b00001 #
+12
+b00000000000000000000000000000001 *
+1$
+b00000000000000000000000000000001 +
+b00001 (
+1,
+#16
+0,
+#21
+1,
+#26
+b00000 %
+b000 1
+b00000000000000000000000000000000 .
+b00000000 '
+0/
+0,
+b00000000000000000000000000000000 )
+#31
+b00000000000000000000000000000000 3
+b00000000 0
+b00000000000000000000000000000000 -
+b000 !
+b000 "
+b00000000 &
+b00000 #
+02
+b00000000000000000000000000000000 *
+0$
+b00000000000000000000000000000000 +
+b00000 (
+1,
+#36
+0,

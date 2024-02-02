@@ -1,0 +1,86 @@
+$date
+2022-01-08T18:08+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module exemem_reg $end
+ $var wire 1 ! io_mem_wreg $end
+ $var wire 5 " wa_reg $end
+ $var wire 1 # wreg_reg $end
+ $var wire 8 $ aluop_reg $end
+ $var wire 5 % io_exe_wa $end
+ $var wire 32 & io_exe_wd $end
+ $var wire 1 ' clock $end
+ $var wire 5 ( io_mem_wa $end
+ $var wire 32 ) io_mem_wd $end
+ $var wire 8 * io_exe_aluop $end
+ $var wire 1 + io_exe_wreg $end
+ $var wire 1 , reset $end
+ $var wire 32 - wd_reg $end
+ $var wire 8 . io_mem_aluop $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+b00000000000000000000000000000000 &
+0'
+b00000 %
+b00000000 *
+0!
+b00000000 $
+b00000000000000000000000000000000 )
+0#
+b00000 (
+b00000 "
+0+
+b00000000000000000000000000000000 -
+0,
+b00000000 .
+$end
+#0
+1,
+#1
+1'
+#6
+b00001 %
+b00000000000000000000000000000001 &
+b00000001 *
+0'
+1+
+0,
+#11
+1!
+b00000000000000000000000000000001 -
+b00001 "
+b00000001 .
+1#
+1'
+b00000001 $
+b00001 (
+b00000000000000000000000000000001 )
+#16
+0'
+#21
+1'
+#26
+b00000 %
+b00000000000000000000000000000000 &
+b00000000 *
+0'
+0+
+#31
+0!
+b00000000000000000000000000000000 -
+b00000 "
+b00000000 .
+0#
+1'
+b00000000 $
+b00000 (
+b00000000000000000000000000000000 )
+#36
+0'

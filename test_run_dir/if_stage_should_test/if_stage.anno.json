@@ -1,0 +1,25 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~if_stage|if_stage>io_iaddr",
+    "sources":[
+      "~if_stage|if_stage>io_ice"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.options.TargetDirAnnotation",
+    "directory":"test_run_dir\\if_stage_should_test"
+  },
+  {
+    "class":"firrtl.options.OutputAnnotationFileAnnotation",
+    "file":"if_stage"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\if_stage_should_test"
+  }
+]

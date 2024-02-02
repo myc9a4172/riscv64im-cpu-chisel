@@ -1,0 +1,67 @@
+class myc01_core_tester extends FlatSpec with ChiselScalatestTester{
+   behavior of "myc01_core"
+// test class body here
+   it should "test_R-type_addi-andi" in {
+//test case body here
+    test(new myc01_core) { c =>
+    //test body here
+	//"b00000000||0100_rs1 0000||1_000_rd 0001||1_0010011".U   //addi
+	//"b00000000||0100_rs1 0000||1_010_rd 0001||1_0010011".U   //slti
+	//"b00000000||0100_rs1 0000||1_011_rd 0001||1_0010011".U   //sltiu
+	//"b00000000||0110_rs1 0000||1_100_rd 0001||1_0010011".U   //xori  
+	//"b00000000||0100_rs1 0000||1_110_rd 0001||1_0010011".U   //ori
+	//"b00000000||0100_rs1 0000||1_111_rd 0001||1_0010011".U   //andi
+
+	//slti   "b10010011_10100001_01000000_00000000".U
+	//sltiu  "b10010011_10110001_01000000_00000000".U
+	//xori   "b10010011_11000001_01100000_00000000".U
+	//ori    "b10010011_11100001_01000000_00000000".U
+	//andi   "b10010011_11110001_01000000_00000000".U
+	
+	c.clock.step(1)
+	
+	//"b00000000||0100_rs1 0000||1_000_rd 0001||1_0010011".U   //addi
+	c.io.inst.poke("b10010011_10000001_01000000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	c.clock.step(10)
+	
+	//"b10000000||0100_rs1 0000||1_010_rd 0001||1_0010011".U   //slti
+	c.io.inst.poke("b10010011_10100001_01000000_10000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	   
+	c.clock.step(10)
+	
+    //"b10000000||0100_rs1 0000||1_011_rd 0001||1_0010011".U   //sltiu  
+	c.io.inst.poke("b10010011_10110001_01000000_10000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	c.clock.step(10)
+	
+    //"b00000000||0110_rs1 0000||1_100_rd 0001||1_0010011".U   //xori   
+	c.io.inst.poke("b10010011_11000001_01100000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	c.clock.step(10)
+	
+    //"b00000000||0100_rs1 0000||1_110_rd 0001||1_0010011".U   //ori
+	c.io.inst.poke("b10010011_11100001_01000000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	c.clock.step(10)
+	
+    //"b00000000||0100_rs1 0000||1_111_rd 0001||1_0010011".U   //andi 
+	c.io.inst.poke("b10010011_11110001_01000000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+    c.clock.step(10)
+	 
+   }
+  }
+ }

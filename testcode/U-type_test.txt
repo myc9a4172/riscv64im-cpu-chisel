@@ -1,0 +1,39 @@
+class myc01_core_tester extends FlatSpec with ChiselScalatestTester{
+   behavior of "myc01_core"
+// test class body here
+   it should "test_U-type" in {
+//test case body here
+    test(new myc01_core) { c =>
+    //test body here
+	
+	//"b00000000_00000000_0001||0000_1||0110111".U   //lui
+	//"b00000000_00000000_0010||0000_1||0110111".U   //lui
+	//"b00000000_10000000_0000||0000_1||0010111".U   //auipc
+	
+	c.clock.step(2)
+	
+	//"b00000000_00000000_0001||0000_1||0110111".U   //lui
+	c.io.inst.poke("b10110111_00010000_00000000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	//"b00000000_00000000_0010||0000_1||0110111".U   //lui
+	c.io.inst.poke("b10110111_00100000_00000000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	//"b00000000_10000000_0000||0000_1||0010111".U   //auipc
+	c.io.inst.poke("b10010111_00000000_10000000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	//"b00000000_00000000_1000||0000_1||0010111".U   //auipc
+	c.io.inst.poke("b10010111_10000000_10000000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+    c.clock.step(10)
+	 
+   }
+  }
+ }

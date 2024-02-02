@@ -1,0 +1,4 @@
+sbt 'test:runMain myc01.core.myc01_core_Gen'
+'test:runMain myc01.core.myc01_core_Gen'
+sbt
+test:runMain myc01.core.myc01_core_Gen

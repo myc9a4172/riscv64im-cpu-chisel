@@ -1,0 +1,32 @@
+class myc01_core_tester extends FlatSpec with ChiselScalatestTester{
+   behavior of "myc01_core"
+// test class body here
+   it should "test_jal" in {
+//test case body here
+    test(new myc01_core) { c =>
+    //test body here
+	
+	//"h004000ef".U   //jal x1,0x00002
+
+	c.clock.step(2)
+	
+	//"h004000ef".U   //jal
+	c.io.inst.poke("hef008008".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	//nop
+	c.io.inst.poke("h13040101".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+
+	//"h004000ef".U   //jal
+	c.io.inst.poke("hef00c00e".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+    c.clock.step(10)
+	 
+   }
+  }
+ }

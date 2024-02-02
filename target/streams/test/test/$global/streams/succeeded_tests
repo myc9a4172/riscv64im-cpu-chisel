@@ -1,0 +1,13 @@
+#Successful Tests
+#Tue Feb 08 15:51:59 CST 2022
+myc01.core.ifid_reg_tester=1641643238142
+myc01.core.id_stage_tester=1641646914231
+myc01.core.exe_stage_tester=1641648112613
+myc01.core.idexe_reg_tester=1641646809740
+myc01.core.myc01_core_tester=1644306718903
+myc01.core.regfile_tester=1641711083115
+myc01.core.memwb_reg_tester=1641708653021
+myc01.core.if_stage_tester=1641641087803
+myc01.core.mem_stage_tester=1641665610970
+myc01.core.exemem_reg_tester=1641665304379
+myc01.core.wb_stage_tester=1641709446089

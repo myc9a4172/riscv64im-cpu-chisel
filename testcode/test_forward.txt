@@ -1,0 +1,42 @@
+class myc01_core_tester extends FlatSpec with ChiselScalatestTester{
+   behavior of "myc01_core"
+// test class body here
+   it should "test_forward" in {
+//test case body here
+    test(new myc01_core) { c =>
+    //test body here
+	
+	//"b0000000_rs2 0||0010_ rs1 0000||1_000_rd 0001||1_0110011".U   //add rs2=00010=2 rs1=00001=1 rd=00011=3
+	//"b0000000_rs2 0||0011_ rs1 0001||0_000_rd 0000||1_0110011".U   //add rs2=00011=3 rs1=00010=2 rd=00001=1
+    //"b0000000_rs2 0||0001_ rs1 0001||1_000_rd 0001||0_0110011".U   //add rs2=00001=1 rs1=00011=3 rd=00010=2
+    //"b0000000_rs2 0||0010_ rs1 0000||1_000_rd 0001||1_0110011".U   //add rs2=00010=2 rs1=00001=1 rd=00011=3
+	
+	//"b00000000||00100000||10000001||10110011".U   //add rs2=00010=2 rs1=00001=1 rd=00011=3
+	//"b00000000||00100001||00000000||10110011".U   //add rs2=00010=2 rs1=00010=2 rd=00001=1
+    //"b00000000||00010001||10000001||00110011".U   //add rs2=00001=1 rs1=00011=3 rd=00010=2
+	
+    //"b00000000||00100000||10000001||10110011".U   //add rs2=00010=2 rs1=00001=1 rd=00011=3
+	
+	c.clock.step(1)
+	
+	c.io.inst.poke("b10110011_10000001_00100000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	c.io.inst.poke("b10110011_00000000_00100001_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	c.io.inst.poke("b00110011_10000001_00010001_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	c.io.inst.poke("b10110011_10000001_00100000_00000000".U)  
+	c.clock.step(1)
+	c.io.inst.poke(0.U)
+	
+	c.clock.step(10)
+		 
+   }
+  }
+ }
